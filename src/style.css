@@ -1,0 +1,25 @@
+body{
+    background-color: #ccc;
+}
+
+.big-bg{
+    background-color: white;
+    box-shadow: 0 0 0.5;
+    text-align: center;
+    padding: 30px;
+}
+
+.big-bg ul>li{
+    display: inline;
+    margin-right: 40px;
+}
+
+.big-bg ul>li a{
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+}
+
+.big-bg ul>li a:hover{
+    border-bottom: 2px solid orange;
+}

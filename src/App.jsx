@@ -1,5 +1,5 @@
 import useCounter from "./useCounter";
-
+import Links from "./link";
 export default function App() {
   const { count, increment, decrement, reset, setValue } = useCounter();
 
@@ -8,9 +8,11 @@ export default function App() {
   };
 
   return (
-    <div className="base-app">
+    <>
+     <Links/>
+      <div className="base-app">
       <span className="base-app__tag">Counter</span> {count}
-      <div className="base-app__actions">
+       <div className="base-app__actions">
         <button className="theme-green" onClick={increment}>
           Increment
         </button>
@@ -23,6 +25,7 @@ export default function App() {
       </div>
       <br />
       <input value={count} onChange={handleChange} type="number" />
-    </div>
+      </div>
+    </>
   );
 }
